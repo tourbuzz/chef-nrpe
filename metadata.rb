@@ -7,7 +7,7 @@ long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           '1.4.8'
 
 recipe 'default', 'Installs and configures a nrpe client'
-%w(build-essential yum-epel).each do |cb|
+%w(apt build-essential yum-epel).each do |cb|
   depends cb
 end
 
